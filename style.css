@@ -1,0 +1,136 @@
+body {
+    font-family: roboto;
+    background-color: rgba(241, 241, 241, 0.295);
+}
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: scroll;
+    border:#b87e44 solid 3px;
+    border-radius: 10px;
+}
+.side {
+    width: max(305px, 35vw);
+    height: 100vh;
+    background-image: url(src/bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.darkBackground {
+    height: 150px;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.726);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.logoimg{
+    height: 125px;
+    width: 125px;
+}
+.logotext {
+    font-size: 30px;
+    color: #FFCC99;
+    text-shadow: 0 0 2px #FFCC99;
+}
+.credits {
+    position: absolute;
+    bottom: 0;
+    
+    font-family: sans-serif;
+    text-shadow: 0 0 2px #070707;
+    color: rgb(255, 255, 255);
+}
+.main {
+    width: max(370px, 65vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(src/subtle-prism.svg);
+    font-family: sans;
+    
+}
+
+.webinfo {
+    
+    font-weight: bolder;
+    
+}
+
+.webinfo div {
+    font-size: 20px;
+    margin: 25px;
+
+}
+
+form {
+    display: grid;
+    width: cover;
+    grid-template: repeat(3, 2fr) / repeat(2, 1fr);
+    gap: 0 5px;
+    padding: 20px;
+    gap: 5px;
+
+}
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formdiv {
+    background-color:  #FFCC99;  
+    border: solid 3px #b87e44; 
+    border-radius: 10px;
+}
+legend {
+    padding: 10px;
+}
+
+label {
+    text-shadow: 0 0 1px rgb(126, 57, 57);
+    color: rgb(0, 0, 0);
+
+}
+
+input {
+    width: 200px;
+    border: solid 2px #b87e44; 
+    border-radius: 5px;
+}
+input:focus {
+    border: 5px solid #b87e44; 
+    background-color: #ffffff81;
+}
+
+input:valid {
+    border: 2px solid rgb(43, 150, 79);
+    background-color: #6fdb7d81;
+
+}
+ button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #FFCC99;
+    border: solid 3px #b87e44;
+    color: #b87e44;
+    border-radius: 10px;
+ }
+
+ .footer {
+    padding: 20px;
+    
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+@font-face {
+    font-family: roboto;
+    src: url(src/Norse-Bold.otf);
+}
+
